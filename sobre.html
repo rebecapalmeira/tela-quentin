@@ -31,24 +31,24 @@
         </div>
     </header>
 
-    <main>
-        <!-- inicío banner principal, abaixo do cabeçalho -->
-        <div class="filmeprincipal">
-            <div class="container">
-                <h3 class="titulo">QUENTIN TARANTINO</h3>
-                <p class="descricao">Se você quer um filme, faça-o!</p>
-                <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
-                <div class="botoes">
-                    <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
-                </div>
+<main>
+    <!-- Banner após cabeçalho -->
+    <div class="filmeprincipal">
+        <div class="container">
+            <h3 class="titulo">QUENTIN TARANTINO</h3>
+            <p class="descricao">Se você quer um filme, faça-o!</p>
+            <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
+            <div class="botoes">
+                <!-- botão que puxa a janela do trailer MODAL -->
+                <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                    ASSISTIR AGORA
+                </button>
+                <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
+                    MAIS INFORMAÇÕES
+                </button>
             </div>
         </div>
-    </main>
+    </div>
 
     <!-- MODAL -->
     <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
@@ -69,10 +69,10 @@
           </div>
         </div>
     </div>
-    <!-- fim do MODAL -->
-    <!-- fim do banner principal, abaixo do cabeçalho -->
+    <!-- fim do banner após o cabeçalho -->
 
-    <div class="carrosel-filmes"></div>
+    <!-- início do carrossel -->
+    <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
                 <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg" alt="">
@@ -126,6 +126,11 @@
             </div>
             
         </div>
+    </div>
+    <!-- fim do carrossel -->
+
+</main>
+    
 
     <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
 

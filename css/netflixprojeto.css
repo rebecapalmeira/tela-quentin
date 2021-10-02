@@ -131,6 +131,25 @@ header nav a:hover{
 }
 
 
+/*  CSS Página Biografia  */
 
 
- 
+
+
+ /*  CSS BIOGRAFIA  */
+
+ #filmeBio {
+    font-family: 'Cabin', sans-serif;
+    font-size:  20px;
+    background-image: url('https://i2.wp.com/republikapop.com.br/wp-content/uploads/2015/12/bastardos-inglorios.jpg?fit=750%2C500&ssl=1');
+    
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+ /* FIM DO CSS BIOGRAFIA */

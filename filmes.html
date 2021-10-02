@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/netflixprojeto.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="./css/responsive.css">
+
+    <!--owl css-->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Quentin Tarantino</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <h2 class="logo">TELA QUENTIN</h2>
+            <nav class="d-flex justify-content-around">
+                <a href="index.html" class="links-menu">Início</a>
+                <a href="filmes.html" class="links-menu">Filmes</a>
+                <a href="biografia.html" class="links-menu">Biografia</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <!-- Banner após cabeçalho -->
+        <div class="filmeprincipal">
+            <div class="container">
+                <h3 class="titulo">QUENTIN TARANTINO</h3>
+                <p class="descricao">Se você quer um filme, faça-o!</p>
+                <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
+                <div class="botoes">
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    
+        <!-- MODAL -->
+        <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content" id="modal-trailer">
+                <div class="modal-header">
+                  <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+                </div>
+                <div class="modal-footer">
+                  
+                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    <!-- fim do banner após o cabeçalho -->
+
+    <!-- album de miniaturas de filmes -->
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+        <!-- card com miniatura do filme -->
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">Nome do Filme</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <!-- botão para janela modal do trailer -->
+                        <button role="button" class="botao" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                            Trailer
+                        </button>
+                      <!-- janela modal do trailer  -->
+                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content" id="modal-trailer">
+                                <div class="modal-header">
+                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                                </div>
+                                <div class="modal-footer">
+                                
+                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                      <!-- fim da janela modal do trailer -->
+
+                      <!-- botão para janela modal com mais informações sobre o filme -->
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
+                      <!-- janela modal do saiba mais -->
+                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
+                          <div class="modal-content" id="modal-trailer">
+                            <div class="modal-header">
+                              <h5 class="modal-title text-light">Pulp Fiction</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
+                
+                            </div>
+                            <div class="modal-footer">
+                              
+                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                      <!-- fim da janela modal do trailer -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                    </div>
+                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- fim do album de ministuras de filmes -->
+    
+        <!-- início do carrossel -->
+        <div class="carrosel-filmes">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/48/24/20122126.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/15/03/19/17/47/301476.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/96/16/19870555.jpg
+                    " alt="">
+                </div>
+    
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/90/95/93/20122143.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/75/68/19961228.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/19/08/06/21/50/5749668.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/16/01/07/20/59/207268.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/07/53/20391069.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/20/58/19873090.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/16/32/19872655.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/88/48/20223111.jpg
+                    " alt="">
+                </div>
+                <div class="item">
+                    <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/95/49/34/20408653.jpg
+    
+                    " alt="">
+                </div>
+                
+            </div>
+        </div>
+        <!-- fim do carrossel -->
+    
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owlcarrossel.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+</body>
+</html>
