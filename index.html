@@ -167,40 +167,21 @@
 
     <!-- inicío da section biografia -->
         <section class="home-banner">
-            <div id="movie-info" class="container">
+            <div id="movie-info" class="d-flex flex-column m-5">
                 <img src="./img/quentin.png" class="quentin" alt="imagem com título do filme">
-                <p class="descricao-filme1 text-uppercase mt-5">diretor. roteirista. produtor</p>
+                <span class="descricao-filme1 text-uppercase mt-5">diretor. roteirista. produtor</span>
 
+                <!-- botão para página de biografia -->
                 <div class="botoes">
-                    <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3">
-                        <a href="biografia.html" class="text-decoration-none">veja biografia</a>                        
-                    </button>
-
-                        <!-- janela MODAL trailer Pulp Fiction -->
-                        <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                                <div class="modal-content" id="modal-trailer">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center">
-                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- fim da janela MODAL trailer Pulp Fiction-->
+                    <a href="biografia.html">
+                        <button role="button" class="btn botao text-uppercase"><i class="fas fa-info-circle"></i>
+                            veja biografia
+                        </button>
+                    </a>
                 </div>             
             </div>
         </section>
-    <!-- fim dasection biografia -->
+    <!-- fim da section biografia -->
 
     <!-- inicío da section filmes -->
         <section id="filmes" class="row">
@@ -210,17 +191,17 @@
 
             <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
                 <img src="./img/filmes.png" class="titulo-filme-img" alt="imagem com título do filme">
-                <p class="descricao-filme1 text-uppercase">filmografia</p>
+                <span class="descricao-filme1 text-uppercase">filmografia</span>
                 <p class="descricao-filme2">para virar especialista em Quentin Tarantino</p>
 
+                <!-- botão para página de filmes -->
                 <div class="botoes">
-                    <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3">
-                        <a href="filmes.html" class="text-decoration-none">
+                    <a href="filmes.html">
+                        <button role="button" class="btn botao text-uppercase"><i class="fas fa-info-circle"></i>
                             veja filmes
-                        </a>                        
-                    </button>
-                </div>
+                        </button>
+                    </a>
+                </div> 
             </div>                            
         </section>
     <!-- fim da section filmes -->
@@ -229,12 +210,16 @@
         <section id="hollywood" class="row">
             <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
                 <img src="./img/hollywood.png" class="hollywood-img" alt="imagem com título do filme">
-                <p class="descricao-filme1 text-uppercase">o filme mais recente</p>
-                <p class="descricao-filme2 text-center">Na Los Angeles de 1969, o astro de TV Rick Dalton e seu dublê de longa data, Cliff Booth, buscam se manter trabalhando na indústria de entretenimento e acabam cruzando caminho com Charles Manson.</p>
+                <span class="descricao-filme1 text-uppercase">
+                    o filme mais recente
+                </span>
+                <p class="descricao-filme2 text-center">
+                    Na Los Angeles de 1969, o astro de TV Rick Dalton e seu dublê de longa data, Cliff Booth, buscam se manter trabalhando na indústria de entretenimento e acabam cruzando caminho com Charles Manson.
+                </p>
 
                 <div class="botoes">
                     <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3" data-bs-target="#modal-trailer-hollywood" data-bs-toggle="modal">
+                    <button role="button" class="btn botao text-uppercase px-4 py-3" data-bs-target="#modal-trailer-hollywood" data-bs-toggle="modal">
                         <i class="fas fa-play-circle"></i>
                         veja trailer                       
                     </button>
@@ -281,7 +266,7 @@
 
                 <div class="botoes">
                     <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3" data-bs-target="#modal-trailer-django" data-bs-toggle="modal">
+                    <button role="button" class="btn botao text-uppercase px-4 py-3" data-bs-target="#modal-trailer-django" data-bs-toggle="modal">
                         <i class="fas fa-play-circle"></i>
                         veja trailer                       
                     </button>
