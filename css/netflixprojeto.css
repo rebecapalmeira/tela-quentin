@@ -17,7 +17,7 @@
 /*elementos base*/
 body {
     background-color: var(--preto);
-    font-family: 'Arial Black', Times;
+    /* font-family: 'Arial Black', Times; */
     color: rgb(231, 231, 231);
 }
 

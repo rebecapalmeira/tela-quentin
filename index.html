@@ -3,137 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./css/netflixprojeto.css">
-
-    <!--responsividade-->
-    <link rel="stylesheet" href="./css/responsive.css">
-
-    <!--owl css-->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+   
+    <!--link para arquivo css responsável zerar configurações padrão-->
+    <link rel="stylesheet" href="./css/reset.css">
 
     <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="./css/bootstrap.css" rel="stylesheet">
 
-    <title>Quentin Tarantino</title>
+    <!--link para o carrossel owl jquery-->
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+   
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
+
+    <script src="./js/checkpoint3.js"></script>
+
+    <title>Tela Quentin</title>
 </head>
+
 <body>
-    <header class="sticky-top">
-        <div class="container-fluid d-flex justify-content-between">
-            <h2 class="logo">TELA QUENTIN</h2>
-            <nav class="d-flex justify-content-around">
-                <a href="index.html" class="links-menu">Início</a>
-                <a href="filmes.html" class="links-menu">Filmes</a>
-                <a href="biografia.html" class="links-menu">Biografia</a>
-                <a href="sobre.html">Sobre</a>
-            </nav>
-        </div>
+    <header class="sticky-top container-fluid">
+        <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+            <div class="container-fluid d-flex justify-content-between">
+                <div>
+                    <a class="navbar-brand logo" href="index.html">
+                        <img  class="logo" src="./img/2.png" alt="">
+                    </a>
+                </div> 
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon menu-burger"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active links-header" aria-current="page" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active links-header" href="filmes.html">Filmes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active links-header" href="biografia.html">Biografia</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active links-header" href="sobre.html">Sobre</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active links-header" href="#" data-bs-target="#modalLogin" data-bs-toggle="modal">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <!-- inicío banner principal, abaixo do cabeçalho -->
-        <div class="filmeprincipal">
-            <div class="container">
-                <h3 class="titulo">QUENTIN TARANTINO</h3>
-                <p class="descricao">Se você quer um filme, faça-o!</p>
-                <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
-                <div class="botoes">
-                    <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                        ASSISTIR AGORA
+    <main class="bg-dark">
+    <!-- 2 janelas MODAL: login e cadastro. Obs: as duas janelas MODAL foram colocadas no main porque estavam carregando com bug quando colocadas no header-->
+        <!-- janela MODAL login -->
+        <div class="modal" tabindex="-1" role="dialog" id="modalLogin">
+            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+              <div class="modal-content rounded-5 shadow bg-light px-3 py-3">
+                <div class="modal-header">
+                    <h3 class="titulo-modal-header">Login</h3>
+                    <!-- <img src="./img/login.png" class="titulo-modal-header" alt=""> -->
+                    <button type="button" class="btn-close p-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+          
+                <div class="modal-body p-5">
+                  <form class="form">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control rounded-4" id="email" placeholder="nome@email.com" required>
+                      <label for="email" class="text-muted">Email</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-4" id="senha" placeholder="******" required>
+                      <label for="senha" class="text-muted">Senha</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header" type="submit">Login</button>
+                    <small class="text-muted">Ao clicar em Login, você concorda com os Termos de Uso e a Política de Privacidade.</small>
+
+                    <hr class="my-4">
+
+                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                      <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+                      Entre com o Twitter
                     </button>
-                    <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
+                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                      <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+                      Entre com o Facebook
                     </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-4" type="submit">
+                      <svg class="bi me-1" width="16" height="16"><use xlink:href="#google"></use></svg>
+                      Entre com o Google
+                    </button>
+
+                    <hr class="my-4">
+
+                    <span class="m-3 text-dark">Não está cadastrado ainda?</span>
+                    <a href="#" class="text-decoration-none chamada-modal-header" data-bs-target="#modalCadastro" data-bs-toggle="modal">Cadastre-se</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- fim da janela MODAL login -->
+
+        <!-- janela MODAL Cadastro -->
+        <div class="modal" tabindex="-1" role="dialog" id="modalCadastro">
+            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                <div class="modal-content rounded-5 shadow bg-light px-3 py-3">
+                    <div class="modal-header">
+                        <h3 class="titulo-modal-header">Cadastro</h3>
+                        <!-- <img src="./img/cadastro.png" class="titulo-modal-header" alt=""> -->
+                        <button type="button" class="btn-close p-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                               
+                    <div class="modal-body p-5">
+                        <form class="">
+                            <div class="form-floating mb-3">
+                                <input type="nome" class="form-control rounded-4" id="nome" placeholder="Digite seu nome completo">
+                                <label for="nome" class="text-dark text-muted" required>Nome</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control rounded-4" id="email" placeholder="nome@email.com">
+                                <label for="email" class="text-dark text-muted" required>Email</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="password" class="form-control rounded-4" id="senha" placeholder="Password" required>
+                                <label for="senha" class="text-dark text-muted">Senha</label>
+                            </div>
+
+                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header" type="submit">Enviar</button>
+                            <div class="my-3">
+                                <input type="checkbox" name="termosUso" id="termosUso" required>
+                                <label class="text-muted d-inline m-2">Concordo com os Termos de Uso e Política de Privacidade.</label>
+                            </div>
+                            <div class="my-3">
+                                <input type="checkbox" name="termosUso" id="termosUso" required>
+                                <label class="text-muted d-inline m-2">Desejo assinar a Newsletter e receber novidades.</label>
+                            </div>
+                            
+                            <hr class="my-4">
+
+                            <span class="m-3 text-dark">Já tem cadastro conosco?</span>
+                            <a href="#" class="text-decoration-none chamada-modal-header" data-bs-target="#modalLogin" data-bs-toggle="modal">
+                                Login
+                            </a>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </main>
+        <!-- fim da janela MODAL Cadastro -->
+    <!-- fim das janelas modais de login e cadastro -->
 
-    <!-- MODAL -->
-    <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
-          <div class="modal-content" id="modal-trailer">
-            <div class="modal-header">
-              <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- inicío da section biografia -->
+        <section class="home-banner">
+            <div id="movie-info" class="container">
+                <img src="./img/quentin.png" class="quentin" alt="imagem com título do filme">
+                <p class="descricao-filme1 text-uppercase mt-5">diretor. roteirista. produtor</p>
+
+                <div class="botoes">
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3">
+                        <a href="biografia.html" class="text-decoration-none">veja biografia</a>                        
+                    </button>
+
+                        <!-- janela MODAL trailer Pulp Fiction -->
+                        <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                                <div class="modal-content" id="modal-trailer">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex justify-content-center">
+                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                    
+                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fim da janela MODAL trailer Pulp Fiction-->
+                </div>             
             </div>
-            <div class="modal-body d-flex justify-content-center">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    <!-- fim dasection biografia -->
+
+    <!-- inicío da section filmes -->
+        <section id="filmes" class="row">
+            <div class="filmes-banner col-lg-6 col-md-12">
 
             </div>
-            <div class="modal-footer">
-              
-              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-            </div>
-          </div>
-        </div>
-    </div>
-    <!-- fim do MODAL -->
-    <!-- fim do banner principal, abaixo do cabeçalho -->
 
-    <div class="carrosel-filmes"></div>
-        <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/48/24/20122126.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/15/03/19/17/47/301476.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/96/16/19870555.jpg
-                " alt="">
+            <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
+                <img src="./img/filmes.png" class="titulo-filme-img" alt="imagem com título do filme">
+                <p class="descricao-filme1 text-uppercase">filmografia</p>
+                <p class="descricao-filme2">para virar especialista em Quentin Tarantino</p>
+
+                <div class="botoes">
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3">
+                        <a href="filmes.html" class="text-decoration-none">
+                            veja filmes
+                        </a>                        
+                    </button>
+                </div>
+            </div>                            
+        </section>
+    <!-- fim da section filmes -->
+
+    <!-- inicío da section filme mais recente -->
+        <section id="hollywood" class="row">
+            <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
+                <img src="./img/hollywood.png" class="hollywood-img" alt="imagem com título do filme">
+                <p class="descricao-filme1 text-uppercase">o filme mais recente</p>
+                <p class="descricao-filme2 text-center">Na Los Angeles de 1969, o astro de TV Rick Dalton e seu dublê de longa data, Cliff Booth, buscam se manter trabalhando na indústria de entretenimento e acabam cruzando caminho com Charles Manson.</p>
+
+                <div class="botoes">
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3" data-bs-target="#modal-trailer-hollywood" data-bs-toggle="modal">
+                        <i class="fas fa-play-circle"></i>
+                        veja trailer                       
+                    </button>
+
+                    <!-- janela MODAL trailer Era Uma Vez em Hollywood -->
+                    <div class="modal fade" id="modal-trailer-hollywood" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content" id="modal-trailer">
+                                <div class="modal-header">
+                                <h5 class="modal-title text-light">Trailer de "Era Uma Vez em Hollywood"</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/OYGUQmJlgiE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="modal-footer">
+                                
+                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim da janela MODAL trailer Era Uma Vez em Hollywood -->
+                </div>
+            </div> 
+
+            <div class="hollywood-banner col-lg-6 col-md-12">
+
+            </div>                           
+        </section>
+    <!-- fim da section filme mais recente -->
+
+    <!-- inicío da section filme mais lucrativo -->
+        <section id="premiado" class="row">
+            <div class="django-banner col-lg-6 col-md-12">
+
             </div>
 
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/90/95/93/20122143.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/75/68/19961228.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/19/08/06/21/50/5749668.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/16/01/07/20/59/207268.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/07/53/20391069.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/20/58/19873090.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/16/32/19872655.jpg" alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/88/48/20223111.jpg
-                " alt="">
-            </div>
-            <div class="item">
-                <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/95/49/34/20408653.jpg
+            <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
+                <img src="./img/django.png" class="hollywood-img" alt="imagem com título do filme">
+                <p class="descricao-filme1 text-uppercase">o filme mais lucrativo</p>
+                <p class="descricao-filme2 text-center">Django Livre se tornou o filme mais lucrativo da carreira de Quentin Tarantino, além de ter ganhado prêmios em alguns dos festivais mais importantes da indústria de entretenimento.</p>
 
-                " alt="">
-            </div>
-            
-        </div>
+                <div class="botoes">
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="btn btn-banner text-uppercase px-4 py-3" data-bs-target="#modal-trailer-django" data-bs-toggle="modal">
+                        <i class="fas fa-play-circle"></i>
+                        veja trailer                       
+                    </button>
 
-    <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
+                    <!-- janela MODAL trailer Era Uma Vez em Hollywood -->
+                    <div class="modal fade" id="modal-trailer-django" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content" id="modal-trailer">
+                                <div class="modal-header">
+                                <h5 class="modal-title text-light">Trailer de "Django Livre"</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/9vO2pd_y6s8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+                                </div>
+                                <div class="modal-footer">
+                                
+                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fim da janela MODAL trailer Django Livre -->
+                </div>
+            </div>                                       
+        </section>
+    <!-- fim da section filme mais premiado -->
+
+
+    <script src="https://kit.fontawesome.com/5c75d9b24c.js"></script>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
-    <script src="./js/owlcarrossel.js"></script>
-    <!-- JavaScript Bundle with Popper -->
+    <script src="./js/setup.js"></script>
+        
+    <!-- fim do primeiro carrossel com miniaturas de cartazes -->
+    </main>
+   
+    <footer class="container-fluid">
+        <div class="p-5">
+            <div class="useful-links">        
+                <nav>
+                    <ul class="useful-links-list justify-end">
+                        <li><a href="#" class="useful-link-item">Centro de ajuda</a></li>
+                        <li><a href="#" class="useful-link-item">Carreiras</a></li>
+                        <li><a href="#" class="useful-link-item">Preferências de cookies</a></li>
+                    </ul>
+                </nav>
+
+                <div class="midia-buttons">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="#" class="useful-link-item">Cartão pré-pago</a></li>
+                        <li><a href="#" class="useful-link-item">Termos de uso</a></li>
+                        <li><a href="#" class="useful-link-item">Informações corporativas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+    <script src="./js/checkpoint3.js"></script>
 </body>
+
 </html>

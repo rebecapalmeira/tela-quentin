@@ -1,0 +1,36 @@
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel();
+  });
+
+$('.owl-carousel').owlCarousel({
+    navigation:true,
+    slideSpeed:300,
+    paginationSpeed:200,
+    items:1,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    loop:true,
+    margin:15,
+    responsive:{
+        0:{
+            items:1
+        },
+        500:{
+            items:2
+        },
+        900:{
+            items:4
+        },
+        1100:{
+            items:7
+        }
+    }
+})
+
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})

@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/netflixprojeto.css">
+    <!-- <link rel="stylesheet" href="./css/netflixprojeto.css"> -->
+    <link rel="stylesheet" href="./css/main.css">
 
     <!--responsividade-->
     <link rel="stylesheet" href="./css/responsive.css">
@@ -16,61 +17,77 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <title>Quentin Tarantino</title>
+    <title>Tela Quentin | Filmes</title>
 </head>
 <body>
-    <header class="sticky-top">
-        <div class="container-fluid d-flex justify-content-between">
-            <h2 class="logo">TELA QUENTIN</h2>
-            <nav class="d-flex justify-content-around">
-                <a href="index.html" class="links-menu">Início</a>
-                <a href="filmes.html" class="links-menu">Filmes</a>
-                <a href="biografia.html" class="links-menu">Biografia</a>
-                <a href="sobre.html">Sobre</a>
-            </nav>
-        </div>
-    </header>
+  <header class="sticky-top bg-dark">
+    <div class="container-fluid d-flex justify-content-between align-items-center p-2">
+        <nav>
+            <a href="index.html" class="logo">
+                <h2 class="display-5">TELA QUENTIN</h2>
+            </a>               
+        </nav>
+
+        <nav class="menu-direita">
+            <!-- links texto -->
+            <a href="index.html" class="links-header">Início</a>
+            <a href="filmes.html" class="links-header">Filmes</a>
+            <a href="biografia.html" class="links-header">Biografia</a>
+            <a href="sobre.html" class="links-header">Sobre</a>
+
+            <!-- links ícones -->
+            <!-- <a href="#">
+                <i class="bi bi-search glyphicon"></i>
+            </a>
+            <a href="#">
+                <img class="icones-cabecalho" src="./img/notificacao.png" alt="ícone de notificação">
+            </a>
+            <a href="#">
+                <img class="icone-menu-user" src="./img/usuario.png" alt="ícone de usuário">
+            </a> -->
+        </nav>
+    </div>
+  </header>
 
     <main>
-    <!-- Banner após cabeçalho -->
-        <div class="filmeprincipal">
-            <div class="container">
-                <h3 class="titulo">QUENTIN TARANTINO</h3>
-                <p class="descricao">Se você quer um filme, faça-o!</p>
-                <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
-                <div class="botoes">
-                    <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                        ASSISTIR AGORA
-                    </button>
-                    <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
-                    </button>
-                </div>
-            </div>
-        </div>
+   <!-- inicío do banner principal -->
+    <div class="home-banner">
+      <div id="movie-info" class="container">
+          <img src="./img/pulp-fiction.png" class="titulo-filme-img" alt="imagem com título do filme">
+          <p class="descricao-filme1 text-uppercase">tempo de violência</p>
+          <p class="descricao-filme2">Os caminhos de vários criminosos se cruzam nestas três histórias de Quentin Tarantino.</p>
 
-    
-        <!-- MODAL -->
-        <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
-              <div class="modal-content" id="modal-trailer">
-                <div class="modal-header">
-                  <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex justify-content-center">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-                </div>
-                <div class="modal-footer">
-                  
-                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                </div>
-              </div>
-            </div>
-        </div>
-    <!-- fim do banner após o cabeçalho -->
+          <div class="botoes">
+              <!-- botão que puxa a janela do trailer MODAL -->
+              <button role="button" class="button-info text-uppercase px-4 py-3" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                  assistir trailer
+              </button>
+
+                  <!-- janela MODAL trailer Pulp Fiction -->
+                  <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-xl modal-dialog-centered">
+                      <div class="modal-content" id="modal-trailer">
+                          <div class="modal-header">
+                          <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                          </div>
+                          <div class="modal-footer">
+                          
+                          <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+                  <!-- fim da janela MODAL trailer Pulp Fiction-->
+          </div>             
+      </div>
+    </div>
+
+<!-- fim do banner principal -->
 
     <!-- album de miniaturas de filmes -->
 

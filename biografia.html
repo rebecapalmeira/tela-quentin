@@ -36,15 +36,15 @@
         <div class="filmeprincipal">
             <div class="container">
                 <h3 class="titulo">QUENTIN TARANTINO</h3>
-                <p class="descricao">Se você quer um filme, faça-o!</p>
-                <p class="descricao">Quando me perguntam se fui à uma escola de cinema, sempre as respondo: "Não, fui ao cinema!"</p>
+                <p class="descricao">O diretor que coloca a sua alma dentro dos personagens e dos seus filmes!</p>
+                <p class="descricao">Um grande nerd fã de cinema que resolveu participar da indústria!"</p>
                 <div class="botoes">
                     <!-- botão que puxa a janela do trailer MODAL -->
-                    <button role="button" class="botao" data-bs-target="#modal-trailer-PulpFiction" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                        ASSISTIR AGORA
+                    <button role="button" class="botao" data-bs-target="#modal-trailer-QuentinTarantino" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                        ESPECIAL TARANTINO
                     </button>
-                    <button role="button" class="botao" ><i class="fas fa-info-circle"></i>
-                        MAIS INFORMAÇÕES
+                    <button role="button" class="botao" data-bs-target="#modal-Biografia-QuentinTarantino" data-bs-toggle="modal"><i class="fas fa-info-circle"></i>
+                        INTRODUÇÃO À BIOGRAFIA
                     </button>
                 </div>
             </div>
@@ -52,80 +52,72 @@
 
     
         <!-- MODAL -->
-        <div class="modal fade" id="modal-trailer-PulpFiction" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-            <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal fade" id="modal-trailer-QuentinTarantino" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered bg-dark">
               <div class="modal-content" id="modal-trailer">
                 <div class="modal-header">
-                  <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
+                  <h5 class="modal-title text-light">Trailer Quentin Tarantino</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body d-flex justify-content-center">
-                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-                </div>
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/irLfFYc6mac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                  </div>
                 <div class="modal-footer">
-                  
                   <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
                 </div>
               </div>
             </div>
         </div>
+
+        <div class="modal fade" id="modal-Biografia-QuentinTarantino" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" id="modal-Biografia-QuentinTarantino">
+              <div class="modal-header">
+                <h5 class="modal-title text-light">Biografia Quentin Tarantino</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                <p class="text-light">Quentin Jerome Tarantino (Knoxville, 27 de março de 1963) é um realizador, argumentista, produtor, ator, diretor de fotografia e crítico de cinema norte-americano. É vencedor de dois Oscars de melhor roteiro original e foi eleito o 19° maior diretor de cinema dos últimos 25 anos segundo o levantamento da Quartz através do Metacritic.</p>
+                <br>
+                <p>Alcançou a fama rapidamente no início da década de 1990 por seus roteiros não lineares, uso de violência gráfica, diálogos ricos e diversos, com uma mistura irônica de humor e violência. Ele é amplamente considerado um dos mais importantes cineastas de sua geração.</p>  
+                </div>
+              <div class="modal-footer">
+                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+      </div>
     <!-- fim do banner após o cabeçalho -->
 
-    <!-- album de miniaturas de filmes -->
+    <!-- album de miniaturas da bio -->
 
     <div class="album py-5 bg-light">
         <div class="container">
-        <!-- card com miniatura do filme -->
+        <!-- card com miniatura da bio -->
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                <img src="https://br.web.img2.acsta.net/newsv7/21/06/29/16/44/2056259.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
     
                 <div class="card-body">
-                  <p class="card-text">Nome do Filme</p>
+                  <p class="card-text">Tarantino nasceu no Tennessee. Seus pais eram Tony Tarantino, ator e músico descendente de italianos, e Connie MHugh, descendente de irlandeses e índios Cherokees.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <!-- botão para janela modal do trailer -->
-                        <button role="button" class="botao" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                            Trailer
-                        </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
-
-                      <!-- botão para janela modal com mais informações sobre o filme -->
+                       <!-- botão para janela modal com mais informações sobre a bio -->
                       <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
                       <!-- janela modal do saiba mais -->
                       <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
+                        <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                          <div class="modal-content bg-dark" id="modal-trailer">
                             <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
+                              <h5 class="modal-title text-light">Mudança para Los Angeles</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
+                                <p>Logo seu nascimento, sua mãe casou-se com o músico Curt Zastoupil, com quem Tarantino mais tarde viria a formar fortes laços afetivos. Tarantino iniciou seus estudos na região de San Gabriel Valley, em 1968. Em 1971 sua família mudou-se para El Segundo, ao sul de Los Angeles, onde passou a frequentar a Hawthorne Christian School. Ao sair da Narbonne High School, em Harbor City, Califórnia, aos 16 anos, iniciou os estudos em atuação na James Best Theatre Company.</p>
+                                <p></p>
                             </div>
                             <div class="modal-footer">
                               
@@ -149,11 +141,11 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
+                    </div>
                 </div>
               </div>
             </div>
@@ -165,60 +157,11 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                     </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
                 </div>
               </div>
             </div>
@@ -231,10 +174,26 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                   </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -247,10 +206,27 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -263,10 +239,26 @@
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+    
+                <div class="card-body">
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -276,64 +268,7 @@
       </div>
       <!-- fim do album de ministuras de filmes -->
     
-        <!-- início do carrossel -->
-        <div class="carrosel-filmes">
-            <div class="owl-carousel owl-theme">
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/43/36/20096333.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/89/48/24/20122126.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/15/03/19/17/47/301476.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/86/96/16/19870555.jpg
-                    " alt="">
-                </div>
-    
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/90/95/93/20122143.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/75/68/19961228.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/19/08/06/21/50/5749668.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/pictures/16/01/07/20/59/207268.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/90/07/53/20391069.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/20/58/19873090.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/87/16/32/19872655.jpg" alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/92/88/48/20223111.jpg
-                    " alt="">
-                </div>
-                <div class="item">
-                    <img class="box-filmes" src="https://br.web.img2.acsta.net/c_310_420/medias/nmedia/18/95/49/34/20408653.jpg
-    
-                    " alt="">
-                </div>
-                
-            </div>
-        </div>
-        <!-- fim do carrossel -->
-    
+
     </main>
 
 

@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
+/* font-family: 'Cabin', sans-serif; */
+
+:root {
+    --vermelho:#e50914;
+    --preto:#222222;
+    font-family: 'Cabin', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body {
+    background-color: var(--preto);
+    font-family: 'Arial Black', Times;
+    color: rgb(231, 231, 231);
+}
+
+header {
+    background-color: #222222;
+    padding: 1rem;
+}
+
+header .container {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+header nav a:hover{
+    color: #fff
+}
+
+#modal-trailer {
+    background-color: #0e0e0ed8;
+}
+
+/*filme principal*/
+.filmeprincipal {
+    font-family: 'Cabin', sans-serif;
+    font-size:  20px;
+    background-image: url('https://oquartonerd.com.br/wp-content/uploads/2020/03/quentin-tarantino-livro.jpg');
+    
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filmeprincipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.filmeprincipal .titulo {
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: 'Cabin', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.filmeprincipal .container {
+    width: 70%;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-filmes {
+    margin-top: 5px;
+}
+
+
+/*  CSS Página Biografia  */
+
+
+
+
+ /*  CSS BIOGRAFIA  */
+
+ #filmeBio {
+    font-family: 'Cabin', sans-serif;
+    font-size:  20px;
+    background-image: url('https://i2.wp.com/republikapop.com.br/wp-content/uploads/2015/12/bastardos-inglorios.jpg?fit=750%2C500&ssl=1');
+    
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* FIM DO CSS BIOGRAFIA */
