@@ -231,6 +231,10 @@ main .filmes-banner {
     background-color: rgb(17, 17, 17);
 }
 
+.filmes {
+    width: 25rem;
+}
+
 main a {
     color: #FFD50B;
     text-shadow: 2px 2px 2px #e50914;
