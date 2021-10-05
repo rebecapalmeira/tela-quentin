@@ -60,9 +60,9 @@
             </div>
         </div>
     </nav>
-</header>
+  </header>
 
-<main>
+<main  id="topo">
 <!-- 2 janelas MODAL: login e cadastro. Obs: as duas janelas MODAL foram colocadas no main porque estavam carregando com bug quando colocadas no header-->
     <!-- janela MODAL login -->
     <div class="modal" tabindex="-1" role="dialog" id="modalLogin">
@@ -195,20 +195,20 @@
                       <!-- janela modal do trailer  -->
                         <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                             <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
+                              <div class="modal-content" id="modal-trailer">
+                                  <div class="modal-header p-3">
+                                    <h5 class="modal-title text-light">Trailer "Nome do Filme"</Nome></h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+
+                                  <div class="modal-body d-flex justify-content-center">
+                                      <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
+                                  </div>
+
+                                  <div class="modal-footer">
+                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                  </div>
+                              </div>
                             </div>
                         </div>
                       <!-- fim da janela modal do trailer -->
@@ -216,26 +216,26 @@
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
+                      </button>
                       <!-- janela modal do saiba mais -->
                       <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-md modal-dialog-centered btn-light">
                           <div class="modal-content" id="modal-trailer">
                             <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
+                              <h5 class="modal-title text-light">Mais Info</h5>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+
                             <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>               
                             </div>
-                            <div class="modal-footer">
-                              
+
+                            <div class="modal-footer">                             
                               <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
                             </div>
                           </div>
                         </div>
-                    </div>
+                      </div>
                       <!-- fim da janela modal do trailer -->
                     </div>
                     <small class="text-muted">1987</small>
@@ -260,71 +260,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
   
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                              <ul class="carousel-inner page-avatars" data-toggle="modal-gallery" data-target="#modal-gallery">
-                                <li data-photo-pk="163501" class="item" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <a href="https://media.fstatic.com/shfYcuG2B9JaMGcJodZDMEWcL3c=/290x478/smart/media/movies/covers/2013/10/sombras-na-noite_t29350_1.jpg" target="_blank" rel="nofollow noopener" data-gallery="gallery" data-photo-pk="163501" data-content-type-pk="27" class="avatar" itemprop="contentUrl">
-                                <img class="img-full" src="https://media.fstatic.com/RsrtlAG8RlpZplaTkD-j-JcpqBw=/210x312/smart/media/movies/covers/2013/10/sombras-na-noite_t29350_1.jpg" alt="Sombras na Noite - Poster / Capa / Cartaz - Oficial 1" title="" itemprop="thumbnailUrl" data-original-title="Sombras na Noite - Poster / Capa / Cartaz - Oficial 1">
-                                </a>
-                                </li>
-                                <li data-photo-pk="26616" class="item active" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <a href="https://media.fstatic.com/KRJedUgtbW0E7N7rCC_Jp6DbZI0=/290x478/smart/media/movies/covers/2012/02/b1c858bea842d817aea65622a5dea9bd.jpg" target="_blank" rel="nofollow noopener" data-gallery="gallery" data-photo-pk="26616" data-content-type-pk="27" class="avatar" itemprop="contentUrl">
-                                <img class="img-full" src="https://media.fstatic.com/Amg7LHAPMpGym8tmBT7IQ9fdtA0=/210x312/smart/media/movies/covers/2012/02/b1c858bea842d817aea65622a5dea9bd.jpg" alt="Sombras na Noite - Poster / Capa / Cartaz - Oficial 2" title="" itemprop="thumbnailUrl" data-original-title="Sombras na Noite - Poster / Capa / Cartaz - Oficial 2">
-                                </a>
-                                </li>
-                                <li data-photo-pk="163500" class="item" itemscope="" itemtype="http://schema.org/ImageObject">
-                                <a href="https://media.fstatic.com/SHcLugiBlDCDEVifZOLueSO9ABY=/290x478/smart/media/movies/covers/2013/10/sombras-na-noite_t29350.jpg" target="_blank" rel="nofollow noopener" data-gallery="gallery" data-photo-pk="163500" data-content-type-pk="27" class="avatar" itemprop="contentUrl">
-                                <img class="img-full" src="https://media.fstatic.com/F-ImfvJIwNkFnJZJeBxUY9cH_D0=/210x312/smart/media/movies/covers/2013/10/sombras-na-noite_t29350.jpg" alt="Sombras na Noite - Poster / Capa / Cartaz - Oficial 3" title="" itemprop="thumbnailUrl" data-original-title="Sombras na Noite - Poster / Capa / Cartaz - Oficial 3">
-                                </a>
-                                </li>
-                                <li class="item">
-                                <a href="#" class="avatar" data-toggle="uploader" data-uploader="#movie-upload-covers"><i class="icon-upload"></i> Adicionar Poster</a>
-                                </li>
-                                </ul>  
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1991</small>
                     <!-- <small class="text-muted">mins</small> -->
@@ -348,51 +288,11 @@
                             <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                                 Trailer
                             </button>
-                          <!-- janela modal do trailer  -->
-                            <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-xl modal-dialog-centered">
-                                <div class="modal-content" id="modal-trailer">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center">
-                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                          <!-- fim da janela modal do trailer -->
     
                           <!-- botão para janela modal com mais informações sobre o filme -->
                           <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                             Saiba Mais
-                        </button>
-                          <!-- janela modal do saiba mais -->
-                          <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                              <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                  <h5 class="modal-title text-light">Pulp Fiction</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                  
-                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                          <!-- fim da janela modal do trailer -->
+                          </button>
                         </div>
                         <small class="text-muted">1992</small>
                       </div>
@@ -414,51 +314,11 @@
                             <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                                 Trailer
                             </button>
-                          <!-- janela modal do trailer  -->
-                            <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-xl modal-dialog-centered">
-                                <div class="modal-content" id="modal-trailer">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center">
-                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                          <!-- fim da janela modal do trailer -->
     
                           <!-- botão para janela modal com mais informações sobre o filme -->
                           <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                             Saiba Mais
-                        </button>
-                          <!-- janela modal do saiba mais -->
-                          <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                              <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                  <h5 class="modal-title text-light">Pulp Fiction</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                  
-                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                          <!-- fim da janela modal do trailer -->
+                          </button>
                         </div>
                         <small class="text-muted">1993</small>
                       </div>
@@ -480,51 +340,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -547,51 +367,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -614,51 +394,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -681,51 +421,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -748,51 +448,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -815,51 +475,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal" disabled><i class="fas fa-play-circle" ></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1994</small>
                   </div>
@@ -882,51 +502,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1995</small>
                   </div>
@@ -949,51 +529,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1995</small>
                   </div>
@@ -1016,51 +556,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1995</small>
                   </div>
@@ -1083,58 +583,18 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1995</small>
                   </div>
                 </div>
               </div>
             </div>
-            <!--Fim Filme 14->
+            <!--Fim Filme 14-->
 
             <!--Filme 15 - A Rocha-->
             <div class="col">
@@ -1150,51 +610,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1996</small>
                   </div>
@@ -1217,51 +637,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1996</small>
                   </div>
@@ -1284,51 +664,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1996</small>
                   </div>
@@ -1351,51 +691,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1996</small>
                   </div>
@@ -1418,51 +718,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1997</small>
                   </div>
@@ -1485,51 +745,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">1999</small>
                   </div>
@@ -1552,51 +772,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2000</small>
                   </div>
@@ -1619,51 +799,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2000</small>
                   </div>
@@ -1686,51 +826,11 @@
                             <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                                 Trailer
                             </button>
-                          <!-- janela modal do trailer  -->
-                            <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                                <div class="modal-dialog modal-xl modal-dialog-centered">
-                                <div class="modal-content" id="modal-trailer">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body d-flex justify-content-center">
-                                        <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        
-                                    </div>
-                                    <div class="modal-footer">
-                                    
-                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                          <!-- fim da janela modal do trailer -->
     
                           <!-- botão para janela modal com mais informações sobre o filme -->
                           <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                             Saiba Mais
-                        </button>
-                          <!-- janela modal do saiba mais -->
-                          <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                              <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                  <h5 class="modal-title text-light">Pulp Fiction</h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                  
-                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                          <!-- fim da janela modal do trailer -->
+                          </button>
                         </div>
                         <small class="text-muted">2003</small>
                       </div>
@@ -1753,51 +853,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2004</small>
                   </div>
@@ -1820,51 +880,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2004</small>
                   </div>
@@ -1887,51 +907,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
   
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2005</small>
                   </div>
@@ -1954,51 +934,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2005</small>
                   </div>
@@ -2021,51 +961,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2005</small>
                   </div>
@@ -2089,51 +989,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2007</small>
                   </div>
@@ -2156,51 +1016,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2007</small>
                   </div>
@@ -2224,51 +1044,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2007</small>
                   </div>
@@ -2291,51 +1071,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2008</small>
                   </div>
@@ -2359,51 +1099,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2009</small>
                   </div>
@@ -2426,51 +1126,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
 
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2010</small>
                   </div>
@@ -2493,51 +1153,11 @@
                         <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                             Trailer
                         </button>
-                      <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                            <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
-                                <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    
-                                </div>
-                                <div class="modal-footer">
-                                
-                                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                      <!-- fim da janela modal do trailer -->
   
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
-                    </button>
-                      <!-- janela modal do saiba mais -->
-                      <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
-                              <h5 class="modal-title text-light">Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-                
-                            </div>
-                            <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                      <!-- fim da janela modal do trailer -->
+                      </button>
                     </div>
                     <small class="text-muted">2011</small>
                   </div>
@@ -2560,51 +1180,11 @@
                       <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                           Trailer
                       </button>
-                    <!-- janela modal do trailer  -->
-                      <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                          <div class="modal-dialog modal-xl modal-dialog-centered">
-                          <div class="modal-content" id="modal-trailer">
-                              <div class="modal-header">
-                              <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body d-flex justify-content-center">
-                                  <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  
-                              </div>
-                              <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                    <!-- fim da janela modal do trailer -->
 
                     <!-- botão para janela modal com mais informações sobre o filme -->
                     <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                       Saiba Mais
-                  </button>
-                    <!-- janela modal do saiba mais -->
-                    <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                      <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                        <div class="modal-content" id="modal-trailer">
-                          <div class="modal-header">
-                            <h5 class="modal-title text-light">Pulp Fiction</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body d-flex justify-content-center">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-              
-                          </div>
-                          <div class="modal-footer">
-                            
-                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                    <!-- fim da janela modal do trailer -->
+                    </button>
                   </div>
                   <small class="text-muted">2012</small>
                 </div>
@@ -2627,51 +1207,11 @@
                       <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                           Trailer
                       </button>
-                    <!-- janela modal do trailer  -->
-                      <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                          <div class="modal-dialog modal-xl modal-dialog-centered">
-                          <div class="modal-content" id="modal-trailer">
-                              <div class="modal-header">
-                              <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body d-flex justify-content-center">
-                                  <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  
-                              </div>
-                              <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                    <!-- fim da janela modal do trailer -->
 
                     <!-- botão para janela modal com mais informações sobre o filme -->
                     <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                       Saiba Mais
-                  </button>
-                    <!-- janela modal do saiba mais -->
-                    <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                      <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                        <div class="modal-content" id="modal-trailer">
-                          <div class="modal-header">
-                            <h5 class="modal-title text-light">Pulp Fiction</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body d-flex justify-content-center">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-              
-                          </div>
-                          <div class="modal-footer">
-                            
-                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                    <!-- fim da janela modal do trailer -->
+                    </button>
                   </div>
                   <small class="text-muted">2015</small>
                 </div>
@@ -2694,51 +1234,11 @@
                       <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
                           Trailer
                       </button>
-                    <!-- janela modal do trailer  -->
-                      <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                          <div class="modal-dialog modal-xl modal-dialog-centered">
-                          <div class="modal-content" id="modal-trailer">
-                              <div class="modal-header">
-                              <h5 class="modal-title text-light">Trailer Pulp Fiction</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                              </div>
-                              <div class="modal-body d-flex justify-content-center">
-                                  <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                  
-                              </div>
-                              <div class="modal-footer">
-                              
-                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                              </div>
-                          </div>
-                          </div>
-                      </div>
-                    <!-- fim da janela modal do trailer -->
 
                     <!-- botão para janela modal com mais informações sobre o filme -->
                     <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                       Saiba Mais
-                  </button>
-                    <!-- janela modal do saiba mais -->
-                    <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                      <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                        <div class="modal-content" id="modal-trailer">
-                          <div class="modal-header">
-                            <h5 class="modal-title text-light">Pulp Fiction</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body d-flex justify-content-center">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>
-              
-                          </div>
-                          <div class="modal-footer">
-                            
-                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                          </div>
-                        </div>
-                      </div>
-                  </div>
-                    <!-- fim da janela modal do trailer -->
+                    </button>
                   </div>
                   <small class="text-muted">2019</small>
                 </div>
@@ -2751,10 +1251,9 @@
           </div>
         </div>
       </div>
-      <!-- fim do album de ministuras de filmes -->
-    
-    
+      <!-- fim do album de ministuras de filmes -->   
     </main>
+
     <footer class="container-fluid">
       <div class="container p-5">
           <div class="useful-links row text-center">        
@@ -2767,7 +1266,7 @@
               
               <nav class="col-lg-6 col-md-12">
                   <ul>
-                      <li><a href="#" class="useful-link-item">Início da Página</a></li>
+                      <li><a href="#topo" class="useful-link-item">Início da Página</a></li>
                       <li><a href="#" class="useful-link-item">Filmes</a></li>
                       <li><a href="#" class="useful-link-item">Biografia</a></li>
                       <li><a href="#" class="useful-link-item">Sobre</a></li>
@@ -2775,7 +1274,7 @@
               </nav>
           </div>
       </div>
-  </footer>
+    </footer>
 
 
     <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
