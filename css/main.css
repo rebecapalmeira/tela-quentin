@@ -11,6 +11,7 @@
 :root {
     font-family: 'Cabin', sans-serif;
     scroll-behavior: smooth;
+    scroll-padding: 120px;
 }
 
 
@@ -36,6 +37,38 @@ a:hover {
     header .logo:hover {
         width: 13.3rem;
     }
+
+    .quentin {
+        width: 20rem;
+    }
+
+    .filmes-img {
+        width: 20rem;
+    }
+
+    .hollywood-img {
+        width: 25rem;
+    }
+
+      /* css banner topo home */
+      .killBill-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner era uma vez em hollywood */
+    .hollywood-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
+        height:70vh;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -45,6 +78,38 @@ a:hover {
     
     header .logo:hover {
         width: 15.3rem;
+    }
+
+    .quentin {
+        width: 25rem;
+    }
+
+    .filmes-img {
+        width: 20rem;
+    }
+
+    .hollywood-img {
+        width: 30rem;
+    }
+
+    /* css banner topo home */
+    .killBill-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
+        height: 70vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner era uma vez em hollywood */
+    .hollywood-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
+        height:70vh;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 
 }
@@ -59,7 +124,48 @@ a:hover {
         width: 17.3rem;
     }
 
+    /* css imagens títulos de banner */
+    .quentin {
+        width: 30rem;
+    }
 
+    .filmes-img {
+        width: 20rem;
+    }
+
+    .hollywood-img {
+        width: 30rem;
+    }
+
+    /* css banner topo home */
+    .killBill-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner era uma vez em hollywood */
+    .hollywood-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
+        height: 70vh;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+      /* css banner django */
+      .django-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/django-banner.png');
+        height: 70vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -78,8 +184,47 @@ a:hover {
         color: white;
     }
 
+    .quentin {
+        width: 35rem;
+    }
 
+    .filmes-img {
+        width: 20rem;
+    }
 
+    .hollywood-img {
+        width: 25rem;
+    }
+   
+    /* css banner topo home */
+    .killBill-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner era uma vez em hollywood */
+    .hollywood-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner django */
+    .django-banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/django-banner.png');
+    height: 90vh;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -89,6 +234,49 @@ a:hover {
         font-size: 1.5rem;
         color: white;
     }
+/* css imagens títulos */
+    .quentin {
+        width: 45rem;
+    }
+
+    .filmes-img {
+        width: 25rem;
+    }
+
+    .hollywood-img {
+        width: 35rem;
+    }
+
+    /* css banner topo home */
+    .killBill-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner era uma vez em hollywood */
+    .hollywood-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    /* css banner django */
+    .django-banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/django-banner.png');
+        height: 90vh;
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
 }
 
 main .home-banner {
@@ -96,7 +284,7 @@ main .home-banner {
     font-size:  20px;
     background-image: url('https://www.planocritico.com/wp-content/uploads/2019/08/pulp-fiction-tempos-de-viol%C3%AAncia-plano-cr%C3%ADtico-.jpg');
     
-    height: calc(100vh - 90px);
+    height: calc(100vh - 115px);
     background-size: cover;
     background-attachment: fixed;
 
@@ -111,8 +299,8 @@ main .home-banner {
     font-family: 'Cabin', sans-serif;
     font-size:  20px;
     background-image: url('https://br.web.img2.acsta.net/newsv7/21/06/29/16/44/2056259.jpg');
-    
-    height: 90vh;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     background-attachment: fixed;
 
@@ -125,7 +313,7 @@ main .home-banner {
 .banner-filmes {
     font-family: 'Cabin', sans-serif;
     font-size:  20px;
-    background-image: url('https://sm.ign.com/t/ign_br/screenshot/default/tarantino-ranking_ghtj.1280.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
     
     height: 90vh;
     background-size: cover;
@@ -137,40 +325,19 @@ main .home-banner {
     align-items: flex-start;
 }
 
-.quentin {
-    width: 25rem;
-}
+
 
 .descricao-filme1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: white;
 }
 
 .descricao-filme2 {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
-.filmes-banner {
-    height: 90vh;
-    
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;  
-    background-position-y: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
-    height: 90vh;
-    width:100vw;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
 
 
 /* CSS header */
@@ -353,40 +520,16 @@ main a {
     text-shadow: 2px 2px 2px #e50914;
 }
 
-main .hollywood-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/hollywood-banner.png');
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
-.hollywood-img {
-    width: 45rem;
-}
 
-main .django-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/django-banner.png');
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
 
-main .killBill-banner {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('../img/killBill.png');
-    height: 90vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+
+
+
 
 main .filmes-quentin {
     background-image: linear-gradient(rgba(0, 0, 0, 0.25),rgba(0,0,0,.25)100%), url('https://sm.ign.com/t/ign_br/screenshot/default/tarantino-ranking_ghtj.1280.jpg');
-    height: 90vh;
+    height: calc(100vh - 115px);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
