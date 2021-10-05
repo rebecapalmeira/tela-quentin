@@ -1,6 +1,3 @@
-/* .album-miniaturas {
-    background-color: rgb(19, 19, 19);
-} */
 
 .botaof {
     background-color: rgba(0, 0, 0, .50);
@@ -23,7 +20,6 @@
 
 .card img{
     height: 420px;
-    /* height: auto; */
 }
 
 .card-body{
@@ -32,5 +28,5 @@
 
 .card-text{
     height: 100%;
-    min-height: 230px;
+    min-height: 170px;
 }
