@@ -62,8 +62,8 @@
     </nav>
   </header>
 
-<main  id="topo">
-<!-- 2 janelas MODAL: login e cadastro. Obs: as duas janelas MODAL foram colocadas no main porque estavam carregando com bug quando colocadas no header-->
+  <main  id="topo">
+  <!-- 2 janelas MODAL: login e cadastro. Obs: as duas janelas MODAL foram colocadas no main porque estavam carregando com bug quando colocadas no header-->
     <!-- janela MODAL login -->
     <div class="modal" tabindex="-1" role="dialog" id="modalLogin">
         <div class="modal-dialog modal-md modal-dialog-centered" role="document">
@@ -161,22 +161,21 @@
         </div>
     </div>
     <!-- fim da janela MODAL Cadastro -->
-<!-- fim das janelas modais de login e cadastro -->
+  <!-- fim das janelas modais de login e cadastro -->
 
-<!-- inicío da section biografia -->
+  <!-- inicío da section biografia -->
     <section class="home-banner filmes-quentin">
         <div id="movie-info" class="p-5 d-flex justify-content-center">
             <img src="./img/filmes.png" class="filmes" alt="imagem com título do filme">            
         </div>
     </section>
-<!-- fim da section biografia -->
+  <!-- fim da section biografia -->
 
     <!-- album de miniaturas de filmes -->
-
     <div class="album py-5 bg-light">
         <div class="container album-miniaturas">
         <!-- card com miniatura do filme -->
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
             
             <!--Filme 1 - My Best Friend's Birthday-->
             <div class="col">
@@ -188,55 +187,61 @@
                   <p class="card-text"><strong>My Best Friend's Birthday</strong> é um filme amador em preto-e-branco co-escrito e dirigido por Quentin Tarantino. O filme conta a história de Mickey.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <!-- botão para janela modal do trailer -->
-                        <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
-                            Trailer
-                        </button>
+                      <!-- botão para janela modal do trailer -->
+                      <button role="button" class="botaof" data-bs-target="#modal-NomeDoFilme" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                          Trailer
+                      </button>
+
                       <!-- janela modal do trailer  -->
-                        <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                            <div class="modal-dialog modal-xl modal-dialog-centered">
-                              <div class="modal-content" id="modal-trailer">
-                                  <div class="modal-header p-3">
-                                    <h5 class="modal-title text-light">Trailer "Nome do Filme"</Nome></h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                  </div>
+                      <div class="modal fade" id="modal-NomeDoFilme" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                          <div class="modal-dialog modal-xl modal-dialog-centered">
+                            <div class="modal-content" id="modal-trailer">
+                                <div class="modal-header p-3">
+                                  <h5 class="modal-title text-light">Trailer "Nome do Filme"</Nome></h5>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
 
-                                  <div class="modal-body d-flex justify-content-center">
-                                      <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
-                                  </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/s7EdQ4FqbhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                     
+                                </div>
 
-                                  <div class="modal-footer">
-                                    <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
-                                  </div>
-                              </div>
+                                <div class="modal-footer">
+                                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                                </div>
                             </div>
-                        </div>
+                          </div>
+                      </div>
                       <!-- fim da janela modal do trailer -->
   
                       <!-- botão para janela modal com mais informações sobre o filme -->
                       <button role="button" class="botaof" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
                         Saiba Mais
                       </button>
+
                       <!-- janela modal do saiba mais -->
                       <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                        <div class="modal-dialog modal-md modal-dialog-centered btn-light">
-                          <div class="modal-content" id="modal-trailer">
-                            <div class="modal-header">
+                        <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                          <div class="modal-content bg-dark" id="modal-trailer">
+                            <div class="modal-header p-3 p-3">
                               <h5 class="modal-title text-light">Mais Info</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-dismiss="modal"></button>
                             </div>
-
-                            <div class="modal-body d-flex justify-content-center">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus assumenda unde pariatur officiis culpa aperiam officia autem quibusdam, illum et quam, repudiandae vel veritatis, aspernatur numquam quo magnam cupiditate illo eveniet. Eaque aut ipsum temporibus excepturi placeat laborum sed eius pariatur odio exercitationem. Ab, dignissimos veritatis facilis perferendis commodi laudantium?</p>               
-                            </div>
-
-                            <div class="modal-footer">                             
+                            <div class="modal-body d-flex flex-column justify-content-center">
+                                <p class="text-light">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vitae provident illo illum, nesciunt aperiam, a sit quasi perspiciatis autem ducimus ut? Voluptatum similique omnis autem nihil ad labore atque, provident molestias ipsum suscipit deserunt maiores vitae praesentium. Quod, quibusdam. Saepe nisi in aperiam sit voluptas voluptatibus magni. Optio, consequatur.
+                                </p>
+                                <p class="text-light">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis accusantium doloremque? Soluta consectetur delectus maiores unde repudiandae mollitia rerum.
+                                </p>
+                              </div>
+                            <div class="modal-footer">
+                              
                               <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <!-- fim da janela modal do trailer -->
+                      <!-- fim da janela modal do saiba mais -->
                     </div>
                     <small class="text-muted">1987</small>
                   </div>
@@ -1246,7 +1251,6 @@
             </div>
           </div>
           <!--Fim Filme 40-->
-
 
           </div>
         </div>
