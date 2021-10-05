@@ -18,9 +18,8 @@
     
     <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
 
-    <script src="./js/checkpoint3.js"></script>
 
-    <title>Tela Quentin</title>
+    <title>Tela Quentin | Home</title>
 </head>
 
 <body>
@@ -167,7 +166,7 @@
 
     <!-- inicío da section biografia -->
         <section class="home-banner">
-            <div id="movie-info" class="d-flex flex-column m-5">
+            <div id="movie-info" class="d-flex flex-column p-5">
                 <img src="./img/quentin.png" class="quentin" alt="imagem com título do filme">
                 <span class="descricao-filme1 text-uppercase mt-5">diretor. roteirista. produtor</span>
 
@@ -183,28 +182,30 @@
         </section>
     <!-- fim da section biografia -->
 
+
     <!-- inicío da section filmes -->
-        <section id="filmes" class="row">
-            <div class="filmes-banner col-lg-6 col-md-12">
+    <section id="premiado" class="row">
+        <div class="killBill-banner col-lg-6 col-md-12">
 
+        </div>
+
+        <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
+            <img src="./img/filmes.png" class="filmes-img filmes" alt="imagem com título do filme">
+            <p class="descricao-filme1 text-uppercase">filmografia</p>
+            <p class="descricao-filme2 text-center text-light">Pra virar expert em Quentin Tarantino</p>
+
+            <div class="botoes">
+                <!-- botão que puxa a janela do trailer MODAL -->
+                <a href="filmes.html">
+                    <button role="button" class="btn botao text-uppercase px-4 py-3" >
+                        <i class="fas fa-play-circle"></i>
+                        veja filmografia                       
+                    </button>
+                </a>
             </div>
-
-            <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
-                <img src="./img/filmes.png" class="titulo-filme-img" alt="imagem com título do filme">
-                <span class="descricao-filme1 text-uppercase">filmografia</span>
-                <p class="descricao-filme2">para virar especialista em Quentin Tarantino</p>
-
-                <!-- botão para página de filmes -->
-                <div class="botoes">
-                    <a href="filmes.html">
-                        <button role="button" class="btn botao text-uppercase"><i class="fas fa-info-circle"></i>
-                            veja filmes
-                        </button>
-                    </a>
-                </div> 
-            </div>                            
-        </section>
-    <!-- fim da section filmes -->
+        </div>                                       
+    </section>
+<!-- fim da section filmes -->
 
     <!-- inicío da section filme mais recente -->
         <section id="hollywood" class="row">
@@ -213,7 +214,7 @@
                 <span class="descricao-filme1 text-uppercase">
                     o filme mais recente
                 </span>
-                <p class="descricao-filme2 text-center">
+                <p class="descricao-filme2 text-center text-light">
                     Na Los Angeles de 1969, o astro de TV Rick Dalton e seu dublê de longa data, Cliff Booth, buscam se manter trabalhando na indústria de entretenimento e acabam cruzando caminho com Charles Manson.
                 </p>
 
@@ -228,7 +229,7 @@
                     <div class="modal fade" id="modal-trailer-hollywood" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-xl modal-dialog-centered">
                             <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
+                                <div class="modal-header p-3">
                                 <h5 class="modal-title text-light">Trailer de "Era Uma Vez em Hollywood"</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
@@ -262,7 +263,7 @@
             <div class="filmes-texto p-5 col-lg-6 col-md-12 d-flex flex-column justify-content-around align-items-center">
                 <img src="./img/django.png" class="hollywood-img" alt="imagem com título do filme">
                 <p class="descricao-filme1 text-uppercase">o filme mais lucrativo</p>
-                <p class="descricao-filme2 text-center">Django Livre se tornou o filme mais lucrativo da carreira de Quentin Tarantino, além de ter ganhado prêmios em alguns dos festivais mais importantes da indústria de entretenimento.</p>
+                <p class="descricao-filme2 text-center text-light">Django Livre se tornou o filme mais lucrativo da carreira de Quentin Tarantino, além de ter ganhado prêmios em alguns dos festivais mais importantes da indústria de entretenimento.</p>
 
                 <div class="botoes">
                     <!-- botão que puxa a janela do trailer MODAL -->
@@ -275,7 +276,7 @@
                     <div class="modal fade" id="modal-trailer-django" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-xl modal-dialog-centered">
                             <div class="modal-content" id="modal-trailer">
-                                <div class="modal-header">
+                                <div class="modal-header p-3">
                                 <h5 class="modal-title text-light">Trailer de "Django Livre"</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
@@ -302,32 +303,24 @@
     <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/setup.js"></script>
         
-    <!-- fim do primeiro carrossel com miniaturas de cartazes -->
     </main>
    
     <footer class="container-fluid">
-        <div class="p-5">
-            <div class="useful-links">        
-                <nav>
-                    <ul class="useful-links-list justify-end">
-                        <li><a href="#" class="useful-link-item">Centro de ajuda</a></li>
-                        <li><a href="#" class="useful-link-item">Carreiras</a></li>
-                        <li><a href="#" class="useful-link-item">Preferências de cookies</a></li>
-                    </ul>
-                </nav>
-
-                <div class="midia-buttons">
+        <div class="container p-5">
+            <div class="useful-links row text-center">        
+                <div class="midia-buttons col-lg-6 col-md-12">
                     <i class="fab fa-facebook-square"></i>
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-youtube"></i>
                 </div>
                 
-                <nav>
+                <nav class="col-lg-6 col-md-12">
                     <ul>
-                        <li><a href="#" class="useful-link-item">Cartão pré-pago</a></li>
-                        <li><a href="#" class="useful-link-item">Termos de uso</a></li>
-                        <li><a href="#" class="useful-link-item">Informações corporativas</a></li>
+                        <li><a href="#" class="useful-link-item">Início da Página</a></li>
+                        <li><a href="#" class="useful-link-item">Filmes</a></li>
+                        <li><a href="#" class="useful-link-item">Biografia</a></li>
+                        <li><a href="#" class="useful-link-item">Sobre</a></li>
                     </ul>
                 </nav>
             </div>

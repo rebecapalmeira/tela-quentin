@@ -15,12 +15,13 @@
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
    
     <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/netflixprojeto.css"> -->
     
     <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>
 
     <script src="./js/checkpoint3.js"></script>
 
-    <title>Tela Quentin</title>
+    <title>Tela Quentin | Biografia</title>
 </head>
 
 <body>
@@ -70,9 +71,9 @@
         <div class="modal" tabindex="-1" role="dialog" id="modalLogin">
             <div class="modal-dialog modal-md modal-dialog-centered" role="document">
               <div class="modal-content rounded-5 shadow bg-light px-3 py-3">
-                <div class="modal-header">
-                    <h3 class="titulo-modal-header">Login</h3>
-                    <!-- <img src="./img/login.png" class="titulo-modal-header" alt=""> -->
+                <div class="modal-header p-3">
+                    <h3 class="titulo-modal-header p-3">Login</h3>
+                    <!-- <img src="./img/login.png" class="titulo-modal-header p-3" alt=""> -->
                     <button type="button" class="btn-close p-5" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
           
@@ -86,7 +87,7 @@
                       <input type="password" class="form-control rounded-4" id="senha" placeholder="******" required>
                       <label for="senha" class="text-muted">Senha</label>
                     </div>
-                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header" type="submit">Login</button>
+                    <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header p-3" type="submit">Login</button>
                     <small class="text-muted">Ao clicar em Login, você concorda com os Termos de Uso e a Política de Privacidade.</small>
 
                     <hr class="my-4">
@@ -107,7 +108,7 @@
                     <hr class="my-4">
 
                     <span class="m-3 text-dark">Não está cadastrado ainda?</span>
-                    <a href="#" class="text-decoration-none chamada-modal-header" data-bs-target="#modalCadastro" data-bs-toggle="modal">Cadastre-se</a>
+                    <a href="#" class="text-decoration-none chamada-modal-header p-3" data-bs-target="#modalCadastro" data-bs-toggle="modal">Cadastre-se</a>
                   </form>
                 </div>
               </div>
@@ -119,9 +120,9 @@
         <div class="modal" tabindex="-1" role="dialog" id="modalCadastro">
             <div class="modal-dialog modal-md modal-dialog-centered" role="document">
                 <div class="modal-content rounded-5 shadow bg-light px-3 py-3">
-                    <div class="modal-header">
-                        <h3 class="titulo-modal-header">Cadastro</h3>
-                        <!-- <img src="./img/cadastro.png" class="titulo-modal-header" alt=""> -->
+                    <div class="modal-header p-3">
+                        <h3 class="titulo-modal-header p-3">Cadastro</h3>
+                        <!-- <img src="./img/cadastro.png" class="titulo-modal-header p-3" alt=""> -->
                         <button type="button" class="btn-close p-5" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                                
@@ -141,7 +142,7 @@
                                 <label for="senha" class="text-dark text-muted">Senha</label>
                             </div>
 
-                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header" type="submit">Enviar</button>
+                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-dark btn-modal-header p-3" type="submit">Enviar</button>
                             <div class="my-3">
                                 <input type="checkbox" name="termosUso" id="termosUso" required>
                                 <label class="text-muted d-inline m-2">Concordo com os Termos de Uso e Política de Privacidade.</label>
@@ -154,7 +155,7 @@
                             <hr class="my-4">
 
                             <span class="m-3 text-dark">Já tem cadastro conosco?</span>
-                            <a href="#" class="text-decoration-none chamada-modal-header" data-bs-target="#modalLogin" data-bs-toggle="modal">
+                            <a href="#" class="text-decoration-none chamada-modal-header p-3" data-bs-target="#modalLogin" data-bs-toggle="modal">
                                 Login
                             </a>
                         </form>
@@ -164,24 +165,62 @@
         </div>
         <!-- fim da janela MODAL Cadastro -->
     <!-- fim das janelas modais de login e cadastro -->
-
-    <!-- inicío da section biografia -->
-        <section class="home-banner">
-            <div id="movie-info" class="d-flex flex-column m-5">
-                <img src="./img/quentin.png" class="quentin" alt="imagem com título do filme">
-                <span class="descricao-filme1 text-uppercase mt-5">diretor. roteirista. produtor</span>
-
-                <!-- botão para página de biografia -->
+    <!-- Banner após cabeçalho -->
+        <div class="banner-biografia">
+            <div class="container-fluid p-5">
+              <img src="./img/quentin.png" class="quentin" alt="imagem com título do filme">
+                <!-- <p class="descricao text-light">O diretor que coloca a sua alma dentro dos personagens e dos seus filmes!</p>
+                <p class="descricao text-light">Um grande nerd fã de cinema que resolveu participar da indústria!"</p> -->
                 <div class="botoes">
-                    <a href="biografia.html">
-                        <button role="button" class="btn botao text-uppercase"><i class="fas fa-info-circle"></i>
-                            veja biografia
-                        </button>
-                    </a>
-                </div>             
+                    <!-- botão que puxa a janela do trailer MODAL -->
+                    <button role="button" class="botao" data-bs-target="#modal-trailer-QuentinTarantino" data-bs-toggle="modal"><i class="fas fa-play-circle"></i>
+                        ESPECIAL TARANTINO
+                    </button>
+                    <button role="button" class="botao" data-bs-target="#modal-Biografia-QuentinTarantino" data-bs-toggle="modal"><i class="fas fa-info-circle"></i>
+                        INTRODUÇÃO À BIOGRAFIA
+                    </button>
+                </div>
             </div>
-        </section>
-    <!-- fim da section biografia -->
+        </div>
+
+    
+        <!-- MODAL -->
+        <div class="modal fade" id="modal-trailer-QuentinTarantino" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content" id="modal-trailer">
+                <div class="modal-header p-3 p-3">
+                  <h5 class="modal-title text-light">Trailer Quentin Tarantino</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex justify-content-center">
+                  <iframe width="853" height="480" src="https://www.youtube.com/embed/irLfFYc6mac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+                  </div>
+                <div class="modal-footer">
+                  <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modal-Biografia-QuentinTarantino" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+          <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content" id="modal-Biografia-QuentinTarantino">
+              <div class="modal-header p-3 btn-dark p-3">
+                <h5 class="modal-title text-light">Introdução à Biografia</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body btn-dark d-flex justify-content-center">
+                <p>Quentin Jerome Tarantino (Knoxville, 27 de março de 1963) é um realizador, argumentista, produtor, ator, diretor de fotografia e crítico de cinema norte-americano. É vencedor de dois Oscars de melhor roteiro original e foi eleito o 19° maior diretor de cinema dos últimos 25 anos segundo o levantamento da Quartz através do Metacritic.</p>
+                <br>
+                <p>Alcançou a fama rapidamente no início da década de 1990 por seus roteiros não lineares, uso de violência gráfica, diálogos ricos e diversos, com uma mistura irônica de humor e violência. Ele é amplamente considerado um dos mais importantes cineastas de sua geração.</p>  
+                </div>
+              <div class="modal-footer btn-dark">
+                <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- fim do banner após o cabeçalho -->
 
     <!-- album de miniaturas da bio -->
 
@@ -191,10 +230,9 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <img src="https://br.web.img2.acsta.net/newsv7/21/06/29/16/44/2056259.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
-    
+              <img src="https://universoestendido.com.br/wp-content/uploads/2019/02/quentin-tarantino-filmes.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">Tarantino nasceu no Tennessee. Seus pais eram Tony Tarantino, ator e músico descendente de italianos, e Connie MHugh, descendente de irlandeses e índios Cherokees.</p>
+                  <p class="card-text">Tarantino nasceu no Tennessee, mudou-se para Los Angeles e ao sair da Narbonne High School na Califórnia, aos 16 anos, iniciou os estudos em atuação na James Best Theatre Company.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                        <!-- botão para janela modal com mais informações sobre a bio -->
@@ -205,14 +243,13 @@
                       <div class="modal fade" id="modal-maisInfo" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
                         <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
                           <div class="modal-content bg-dark" id="modal-trailer">
-                            <div class="modal-header">
+                            <div class="modal-header p-3 p-3">
                               <h5 class="modal-title text-light">Mudança para Los Angeles</h5>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              <button type="button" class="btn-close" data-dismiss="modal"></button>
                             </div>
                             <div class="modal-body d-flex justify-content-center">
-                                <p>Logo seu nascimento, sua mãe casou-se com o músico Curt Zastoupil, com quem Tarantino mais tarde viria a formar fortes laços afetivos. Tarantino iniciou seus estudos na região de San Gabriel Valley, em 1968. Em 1971 sua família mudou-se para El Segundo, ao sul de Los Angeles, onde passou a frequentar a Hawthorne Christian School. Ao sair da Narbonne High School, em Harbor City, Califórnia, aos 16 anos, iniciou os estudos em atuação na James Best Theatre Company.</p>
-                                <p></p>
-                            </div>
+                                <p class="text-light">Logo após seu nascimento, sua mãe casou-se com o músico Curt Zastoupil, com quem Tarantino mais tarde viria a formar fortes laços afetivos. Tarantino iniciou seus estudos na região de San Gabriel Valley, em 1968. Em 1971 sua família mudou-se para El Segundo, ao sul de Los Angeles, onde passou a frequentar a Hawthorne Christian School. Ao sair da Narbonne High School, em Harbor City, Califórnia, aos 16 anos, iniciou os estudos em atuação na James Best Theatre Company.</p>
+                                </div>
                             <div class="modal-footer">
                               
                               <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
@@ -229,80 +266,166 @@
 
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+              <img src="data:image/jpeg;base64,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" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Aos 22 anos escreveu seu primeiro roteiro, Captain Peachfuzz and the Anchovy Bandit - algo como Capitão Flocos de Pêssego e o Bandido de Anchovas, em 1984.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                       <!-- botão para janela modal com mais informações sobre a bio -->
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo2" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                      <!-- janela modal do saiba mais -->
+                      <div class="modal fade" id="modal-maisInfo2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                          <div class="modal-content bg-dark" id="modal-trailer2">
+                            <div class="modal-header p-3">
+                              <h5 class="modal-title text-light">Balconista de locadora e escritor de roteiros</h5>
+                              <button type="button" class="btn-close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body d-flex justify-content-center">
+                                <p class="text-light">Tarantino começou a trabalhar como balconista na Video Archives, uma famosa locadora de filmes em Manhattan Beach; lá se tornou amigo de Roger Avary, um colega de trabalho com quem mais tarde viria a colaborar em Pulp Fiction. Ele continuou seus estudos em atuação na Allen Garfield's Actors' Shelter, em Beverly Hills, mas passou a se dedicar principalmente a escrever roteiros.</p>
+                                </div>
+                            <div class="modal-footer">
+                              
+                              <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                      <!-- fim da janela modal do trailer -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVoUrDZ0TyYVtfWhz7JBfprVleB8Ifck2Slg&usqp=CAU" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
+                <div class="card-body">
+                  <p class="card-text">Seus primeiros roteiros vendidos, True Romance e Natural Born Killers, tiraram-lhe do anonimato. Ele conheceu Lawrence Bender numa festa em Hollywood, e Bender incentivou Tarantino a dirigir um filme.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo3" data-bs-toggle="modal">
+                        Saiba Mais
+                    </button>
+                    <div class="modal fade" id="modal-maisInfo3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer3">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Primeiros roteiros</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">O produto final dessa conversa foi Reservoir Dogs, de 1992, um filme estiloso e violento, que definiu o tom de seus filmes seguintes. O script foi lido pelo diretor Monte Hell-man, que ajudou a levantar fundos junto à Live Entertainment, bem como garantir o lugar de Tarantino na direção do filme. Harvey Keitel ouviu falar do roteiro através de sua esposa, que foi colega de Lawrence Bender. Ele leu o roteiro e também contribuiu com investimentos, assumiu o papel de produtor executivo, e um personagem no filme.</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                     </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
-                        Saiba Mais
-                    </button>
-                    </div>
-                    </div>
-                </div>
-              </div>
-            </div>
     
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://static.wixstatic.com/media/58015e_88c5a9f7a69e4d9382c2f175075e859a~mv2.jpg/v1/fill/w_1000,h_563,al_c,q_90,usm_0.66_1.00_0.01/58015e_88c5a9f7a69e4d9382c2f175075e859a~mv2.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Seguindo o sucesso de Reservoir Dogs, Tarantino foi abordado por Hollywood e recebeu propostas para dirigir vários projetos, incluindo Speed e Men in Black.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo4" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer4">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Trabalhando em Pulp Fiction</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">Ele se recolheu em Amsterdã para trabalhar em seu roteiro para Pulp Fiction. Quando foi finalmente lançado, o filme ganhou a Palme d'Or (Palma de Ouro) no Festival de Cannes de 1994 e, junto com Sex, Lies, and Videotape, de Steven Soderbergh e Roger and Me, de Michael Moore, revolucionou a indústria de filmes independentes, mostrando que estes filmes também são rentáveis. Pulp Fiction é um filme de roteiro complexo, com personagens verborrágicos, tendo a história dividida em atos e recheado de referências pop. Essas três características se tornaram a marca do criador desde então. O filme ficou conhecido pelas aclamadas atuações de seu elenco e, ainda, por ressuscitar a carreira de John Travolta. Pulp Fiction também rendeu a Tarantino e Avary o Oscar de melhor roteiro original, além da indicação na categoria de melhor filme.</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                    </div>
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://i.pinimg.com/originals/a1/99/fa/a199fa987c2a2c7b66d5893215b580df.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Tarantino dirigiu o quarto episódio da série Four Rooms, um remake de um espisódio de Alfred Hitchcock Presents estrelado por Steve McQueen.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo5" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer5">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Four Rooms</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">Depois de Pulp Fiction, Tarantino dirigiu o quarto episódio da série Four Rooms, The Man from Hollywood, um remake de um espisódio de Alfred Hitchcock Presents estrelado por Steve McQueen. Four Rooms é uma colaboração entre Allison Anders, Alexandre Rockwell, Robert Rodriguez e o próprio Tarantino. Quentin Tarantino e George Clooney são os irmãos Gecko em From Dusk Till Dawn (1996).</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://i.pinimg.com/originals/15/92/93/159293a5e6fa65b84718184b73ec38bb.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">O filme seguinte de Tarantino foi Jackie Brown (1997), uma adaptação de Rum Punch, um romance de seu mentor Elmore Leonard.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo6" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer6">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">1997, Jack Brown</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">É uma adaptação do romance Rum Punch, do escritor Elmore Leonard, e rende tributo aos filmes do gênero blaxploitation da década de 1970. Tem em seu elenco Pam Grier, Robert Forster, Samuel L. Jackson, Robert De Niro, Bridget Fonda e Michael Keaton. Foi o terceiro filme de Tarantino, após seus sucessos Reservoir Dogs, de 1992, e Pulp Fiction, de 1994. Grier e Forster eram atores veteranos, porém ambos não tinham tido um papel de destaque há anos quando atuaram no filme, que revitalizou a carreira dos dois. O filme rendeu a Forster uma indicação ao Oscar de melhor ator coadjuvante, e à Grier e Samuel L. Jackson indicações ao Globo de Ouro.</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                 </div>
@@ -311,47 +434,97 @@
     
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://br.web.img3.acsta.net/newsv7/19/07/22/20/46/1777899.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Tarantino decidiu, então, produzir o filme Bastardos Inglorious. No entanto, ele adiou o projeto para escrever e dirigir Kill Bill, lançado em duas partes.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo7" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo7" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer7">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Estilo Tarantino de ser</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">Um filme estiloso, com temática de vingança, filmado com a influência do Wuxia (filmes chineses de artes marciais), filmes japoneses, filmes de faroeste e filmes de terror italianos ou giallo. O filme é baseado numa personagem chamada A Noiva, que Tarantino criou conjuntamente com a atriz principal deste filme, Uma Thurman, durante as filmagens de Pulp Fiction.</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://bradpittbrasil.com.br/galeria/albums/userpics/10001/normal_inglorious-basterds-berlin-premiere-jul28-2009_284729.jpg" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Ele anunciou o projeto chamado Grindhouse em parceria com Robert Rodriguez, além da continuidade de Kill Bill e a fimagem de Bastardos Inglórios.</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo8" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer8">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Épico, Bastardos Inglórios</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">Tarantino juntou-se com a The Weinstein Company para preparar a produção do que ele planejou ser sua obra-prima épica. Em julho de 2008, Tarantino e os produtores executivos Harvey e Bob Weinstein criaram um cronograma de produção acelerado para ser concluído a tempo para o lançamento no Festival de Cannes de 2009, onde o filme iria concorrer à Palma de Ouro. A The Weinstein Company co-financiou o filme e o distribuiu nos Estados Unidos, assinou ainda um contrato com a Universal Pictures para financiar o restante do filme e distribuí-lo internacionalmente. Alemanha e França foram escolhidas como locais de filmagem e a gravação do filme começou em outubro de 2008 em locações na Alemanha.</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="https://veja.abril.com.br/wp-content/uploads/2019/08/filme-once-upon-a-time-in-hollywood-2.png" alt="" width="100%" height="225" class="bd-placeholder-img card-img-top">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Um dos diretores mais aclamados em Hollywood, o cineasta anunciou sua aposentadoria depois de filmar seu décimo filme. Era Uma Vez em... Hollywood</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button role="button" class="botao" data-bs-target="#modal-maisInfo" data-bs-toggle="modal">
+                      <button role="button" class="botao" data-bs-target="#modal-maisInfo9" data-bs-toggle="modal">
                         Saiba Mais
                     </button>
+                    <div class="modal fade" id="modal-maisInfo9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                      <div class="modal-dialog modal-md modal-dialog-centered btn-light bg-transparent">
+                        <div class="modal-content bg-dark" id="modal-trailer9">
+                          <div class="modal-header p-3">
+                            <h5 class="modal-title text-light">Aposentadoria?</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body d-flex justify-content-center">
+                              <p class="text-light">Muito se especula sobre esse último trabalho dele nos cinemas. Ainda em entrevista a Bill Maher, Tarantino também revelou que estava pensando em fazer um remake de seu filme de estreia Cães de Aluguel (1992) como décimo filme, mas imediatamente desistiu e anunciou: "Não vou fazer isso [...], mas já pensei nisso."</p>
+                              </div>
+                          <div class="modal-footer">
+                            
+                            <button class="btn btn-dark" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Fechar</button>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
                     </div>
                   </div>
                 </div>
@@ -359,11 +532,33 @@
             </div>
           </div>
         </div>
-    </div>
+      </div>
       <!-- fim do album de ministuras de filmes -->
     
 
     </main>
+
+    <footer class="container-fluid">
+      <div class="container p-5">
+          <div class="useful-links row text-center">        
+              <div class="midia-buttons col-lg-6 col-md-12">
+                  <i class="fab fa-facebook-square"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-youtube"></i>
+              </div>
+              
+              <nav class="col-lg-6 col-md-12">
+                  <ul>
+                      <li><a href="#" class="useful-link-item">Início da Página</a></li>
+                      <li><a href="#" class="useful-link-item">Filmes</a></li>
+                      <li><a href="#" class="useful-link-item">Biografia</a></li>
+                      <li><a href="#" class="useful-link-item">Sobre</a></li>
+                  </ul>
+              </nav>
+          </div>
+      </div>
+  </footer>
 
 
     <script src="https://kit.fontawesome.com/9d18d74f35.js" crossorigin="anonymous"></script>

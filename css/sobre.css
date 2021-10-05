@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;700&display=swap');
+/* font-family: 'Cabin', sans-serif; */
+
+:root {
+    --vermelho:#e50914;
+    --preto:#222222;
+    font-family: 'Cabin', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+header {
+    background-color: #222222;
+    padding: 1rem;
+}
+
+header .container {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+
+header nav a:hover{
+    color: #fff
+}
+
+/*filme principal*/
+.fraseParallax {
+    font-family: 'Cabin', sans-serif;
+    font-size: 39px;
+    background-image: url('https://sm.ign.com/ign_it/news/q/quentin-ta/quentin-tarantino-hints-next-project-may-be-elmore_fag9.jpg');
+
+
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.fraseParallax .descricao{
+    text-align: center;
+    color: gainsboro;
+    margin-left: 300px;
+}
+
+.fraseParallax .descricao:hover{
+    color: #fff;
+    font-size: 40px;
+}
+
+.fraseParallax .tarantino{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 500px;
+}
+
+.fraseInicio {
+    font-family: 'Cabin', sans-serif;
+    background-color: #141414;
+    justify-content: center;
+
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fraseInicio .frase{
+    text-align: center;
+    color: gainsboro;
+    font-size: 27px;
+    font-weight: bold;
+    margin-left: 400px;
+    max-width: 550px;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.grupo{
+    background-color: var(--preto);
+}
+
+.grupo .img{
+    width: 200px;
+    height: 240px;
+    border-radius: 50%;
+    margin-left: -50px;
+    margin-top: -70px;
+}
+
+.grupo .containerFlex{
+    width: 200px;
+    height: 240px;
+    display: inline-block;  
+    padding: 9%;
+    background: fixed;
+}
+
+.grupo .nomeGrupo{
+    font-family: 'Arial Black', Times;
+    text-align: center;
+    color: var(--vermelho);
+    font-size: 30PX;
+}
+
+.grupo .textoh3{
+    color: var(--vermelho);
+    font-size: 23px;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+    margin-left: -20px; 
+    white-space: nowrap;
+}
+
+footer{
+    background-color: #141414;
+}
+footer p{
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
