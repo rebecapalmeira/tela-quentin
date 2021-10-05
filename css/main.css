@@ -5,13 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    
 }
 
 :root {
-    --vermelho:#e50914;
-    --amarelo: (#FFD50B);
     font-family: 'Cabin', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -97,7 +96,7 @@ main .home-banner {
     font-size:  20px;
     background-image: url('https://www.planocritico.com/wp-content/uploads/2019/08/pulp-fiction-tempos-de-viol%C3%AAncia-plano-cr%C3%ADtico-.jpg');
     
-    height: 90vh;
+    height: calc(100vh - 90px);
     background-size: cover;
     background-attachment: fixed;
 
@@ -105,10 +104,6 @@ main .home-banner {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-}
-
-.filmes {
-
 }
 
 
@@ -150,6 +145,10 @@ main .home-banner {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 1.5rem;
     color: white;
+}
+
+.descricao-filme2 {
+    font-size: 25px;
 }
 
 .filmes-banner {
